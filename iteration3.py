@@ -4,8 +4,8 @@ import math
 import sys
 
 print(sys.argv[1])
-if sys.argv[1] not in ["parabola", "weight", "force"]:
-  print("'parbola' or 'weight' or 'force' ?")
+if sys.argv[1] not in ["parabola", "weight", "friction"]:
+  print("'parbola' or 'weight' or 'friction' ?")
   exit(1)
 graph_type = sys.argv[1] 
 
@@ -140,4 +140,4 @@ elif graph_type == "weight":
 else:
     plt.clf()
     plt.cla()
-    graph(x_frictional_force, "Angle (°)", y_frictional_force, "Force (N)", 'How force changes with ° of the roller coaster from 0° to 90°', 2)
+    graph(x_frictional_force, "Angle (°)", y_frictional_force, "Force (N)", 'How friction changes with ° of the roller coaster from 0° to 90°', 2)
